@@ -1,0 +1,821 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1,
+h2{
+    color: black;
+}
+h3{
+    color: #999;
+}
+
+.backimage {
+    background-image: url('../images/heroback.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* hero section layout style */
+.hero {
+    position: relative;
+    color: white;
+    padding: 30px;
+    min-height: 200px;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0,0,0,0.3);
+}
+
+.hero p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+
+/* nav bar styling */
+
+nav {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(192, 190, 190);
+    color: #fff;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+
+.logo{
+    width: 70px;
+    height: 65px;
+}
+
+.alert {
+    color: red;
+}
+.alert-danger {
+    color: red;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+nav ul li a:active {
+    background-color: #444;
+    text-decoration: underline;
+    color: #ccc;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    background-color: #747070;
+    color: #f5ebeb;
+    height: 120px;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+nav .reg-nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .reg-nav a .profile {
+    height: 40px;
+    width: 40px;
+}
+
+nav .reg-nav a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav .reg-nav button {
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    background-color: #ccc;
+    height: 40px;
+    min-width: 80px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logout{
+    color: red;
+}
+/* page styling */
+.bdetails {
+    padding: 60px 0 60px 0;
+    background-color: rgb(121, 138, 196);
+    background-color: rgba(123, 127, 184, 0.3);
+    background-image: linear-gradient(45deg, #e2e6ec, #a1b0d1);
+}
+
+.person-info {
+    padding: 20px 30px 45px 30px;
+    min-width: 400px;
+    min-height: 300px;
+    background-color: rgb(221, 218, 218);
+    margin: 0px 200px 0px 200px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+    
+.person-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+.person-info th, .person-info td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.person-info th {
+    background-color: #f2f2f2;
+    height: 60px;
+    font-size: 20px;
+}
+
+.person-info td {
+    background-color: #ccc;
+    height: 45px;
+}
+
+.bdetails .pay-info {
+    min-width: 300px;
+    min-height: 300px;
+    background: rgb(221, 218, 218);
+    padding: 30px;
+    margin: 60px 200px 0px 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.bdetails .pay-info input {
+    height: 40px;
+    width: 65%;
+    border-radius: 10px;
+    background-color: #fdfbfb;
+    margin-bottom: 20px;
+}
+
+.bdetails .pay-info button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 200px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.bdetails .alert-success {
+    color: green;
+    height: 55px;
+    font-size: 22px;
+    width: 100%;
+    padding-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(238, 237, 236);
+}
+
+.bdetails .alert-error {
+    color: red;
+    height: 55px;
+    font-size: 22px;
+    width: 100%;
+    padding-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(238, 237, 237);
+}
+
+/* footer styles */
+
+footer {
+    background-color: #493845c9;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+}
+
+.head {
+    margin-bottom: 20px;
+}
+
+.head h3 {
+    font-size: 24px;
+    color: #fff;
+}
+.cont {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.our-conta {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nunbers {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.emails {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.our-comp,
+.top-routes {
+    flex: 1;
+    margin: 10px;
+}
+.cont h3 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.cont a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cont p {
+    color: #fff;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* navigation bar */
+    .nav-bar nav ul li marquee {
+        display: none;
+    }
+
+    .nav-bar nav a .logo {
+        width: 35px;
+        height: 40px;
+    }
+
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        padding: 3px;
+        position: relative;
+        font-size: 13px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #333;
+    }
+    
+    nav ul li a:active {
+        background-color: #444;
+        text-decoration: underline;
+        color: #ccc;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: none;
+        background-color: #747070;
+        color: #f5ebeb;
+        height: 70px;
+        border-radius: 10px;
+    }
+    
+    nav .reg-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    nav .reg-nav a {
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
+    }
+    
+    nav .reg-nav button {
+        display: inline-block;
+        border-radius: 10px;
+        border: none;
+        background-color: #ccc;
+        height: 30px;
+        min-width: 50px;
+        font-size: 8px;
+        cursor: pointer;
+    }
+
+    nav .reg-nav a .profile {
+        height: 25px;
+        width: 25px;
+    }
+
+    .nav-bar nav .reg-nav .reg-btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px;
+        color: #fff;
+        background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+        font-size: 12px;
+        border-radius: 15px;
+        width: 80px;
+        cursor: pointer;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .cont {
+        flex-direction: column;
+    }
+
+
+    .person-info {
+        padding: 20px 15px 45px 15px;
+        min-width: 200px;
+        min-height: 300px;
+        background-color: rgb(221, 218, 218);
+        margin: 0px 30px 0px 30px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+        
+    .person-info table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 40px;
+    }
+    
+    .person-info th, .person-info td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    .person-info th {
+        background-color: #f2f2f2;
+        height: 60px;
+        font-size: 20px;
+    }
+    
+    .person-info td {
+        background-color: #ccc;
+        height: 45px;
+    }
+
+    .person-info table .c3, .c1 {
+        display: none;
+    }
+
+
+    .bdetails .pay-info {
+        min-width: 200px;
+        min-height: 300px;
+        background: rgb(221, 218, 218);
+        padding: 15px;
+        margin: 60px 15px 0px 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    
+    .bdetails .pay-info input {
+        height: 40px;
+        width: 65%;
+        border-radius: 10px;
+        background-color: #fdfbfb;
+        margin-bottom: 20px;
+    }
+    
+    .bdetails .pay-info button {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        width: 200px;
+        color: #fff;
+        background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+        font-size: 14px;
+        border-radius: 30px;
+        border-top-right-radius: 0;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .bdetails .alert-success {
+        color: green;
+        height: 55px;
+        font-size: 22px;
+        width: 100%;
+        padding-top: 20px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgb(238, 237, 236);
+    }
+    
+    .bdetails .alert-error {
+        color: red;
+        height: 55px;
+        font-size: 22px;
+        width: 100%;
+        padding-top: 20px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgb(238, 237, 237);
+    }
+    
+    
+}
+
+/* Responsive styling @media screen size change */
+@media screen and (max-width: 600px) {
+    /* navigation bar */
+    .nav-bar nav ul li marquee {
+        display: none;
+    }
+
+    .nav-bar nav a .logo {
+        width: 35px;
+        height: 40px;
+    }
+
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        padding: 3px;
+        position: relative;
+        font-size: 13px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #333;
+    }
+    
+    nav ul li a:active {
+        background-color: #444;
+        text-decoration: underline;
+        color: #ccc;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: none;
+        background-color: #747070;
+        color: #f5ebeb;
+        height: 70px;
+        border-radius: 10px;
+    }
+    
+    nav .reg-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    nav .reg-nav a {
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
+    }
+    
+    nav .reg-nav button {
+        display: inline-block;
+        border-radius: 10px;
+        border: none;
+        background-color: #ccc;
+        height: 30px;
+        min-width: 50px;
+        font-size: 8px;
+        cursor: pointer;
+    }
+
+    nav .reg-nav a .profile {
+        height: 25px;
+        width: 25px;
+    }
+
+    .nav-bar nav .reg-nav .reg-btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px;
+        color: #fff;
+        background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+        font-size: 12px;
+        border-radius: 15px;
+        width: 80px;
+        cursor: pointer;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .cont {
+        flex-direction: column;
+    }
+
+    .person-info {
+        padding: 20px 15px 45px 15px;
+        min-width: 200px;
+        min-height: 300px;
+        background-color: rgb(221, 218, 218);
+        margin: 0px 30px 0px 30px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+        
+    .person-info table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 40px;
+    }
+    
+    .person-info th, .person-info td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    .person-info th {
+        background-color: #f2f2f2;
+        height: 60px;
+        font-size: 20px;
+    }
+    
+    .person-info td {
+        background-color: #ccc;
+        height: 45px;
+    }
+
+    .person-info table .c3, .c1 {
+        display: none;
+    }
+
+    .bdetails .pay-info {
+        min-width: 200px;
+        min-height: 300px;
+        background: rgb(221, 218, 218);
+        padding: 15px;
+        margin: 60px 15px 0px 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    
+    .bdetails .pay-info input {
+        height: 40px;
+        width: 65%;
+        border-radius: 10px;
+        background-color: #fdfbfb;
+        margin-bottom: 20px;
+    }
+    
+    .bdetails .pay-info button {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        width: 200px;
+        color: #fff;
+        background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+        font-size: 14px;
+        border-radius: 30px;
+        border-top-right-radius: 0;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .bdetails .alert-success {
+        color: green;
+        height: 55px;
+        font-size: 22px;
+        width: 100%;
+        padding-top: 20px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgb(238, 237, 236);
+    }
+    
+    .bdetails .alert-error {
+        color: red;
+        height: 55px;
+        font-size: 22px;
+        width: 100%;
+        padding-top: 20px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgb(238, 237, 237);
+    }
+    
+
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 300px) {
+     /* navigation bar */
+     .nav-bar nav ul li marquee {
+        display: none;
+    }
+
+    .nav-bar nav a .logo {
+        width: 35px;
+        height: 40px;
+    }
+
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        padding: 3px;
+        position: relative;
+        font-size: 13px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #333;
+    }
+    
+    nav ul li a:active {
+        background-color: #444;
+        text-decoration: underline;
+        color: #ccc;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: none;
+        background-color: #747070;
+        color: #f5ebeb;
+        height: 70px;
+        border-radius: 10px;
+    }
+    
+    nav .reg-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    nav .reg-nav a {
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
+    }
+    
+    nav .reg-nav button {
+        display: inline-block;
+        border-radius: 10px;
+        border: none;
+        background-color: #ccc;
+        height: 30px;
+        min-width: 50px;
+        font-size: 8px;
+        cursor: pointer;
+    }
+
+    nav .reg-nav a .profile {
+        height: 25px;
+        width: 25px;
+    }
+
+    .nav-bar nav .reg-nav .reg-btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px;
+        color: #fff;
+        background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+        font-size: 12px;
+        border-radius: 15px;
+        width: 80px;
+        cursor: pointer;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .cont {
+        flex-direction: column;
+    }
+
+    .person-info {
+        padding: 20px 15px 45px 15px;
+        min-width: 200px;
+        min-height: 300px;
+        background-color: rgb(221, 218, 218);
+        margin: 0px 30px 0px 30px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+        
+    .person-info table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 40px;
+    }
+    
+    .person-info th, .person-info td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    .person-info th {
+        background-color: #f2f2f2;
+        height: 60px;
+        font-size: 20px;
+    }
+    
+    .person-info td {
+        background-color: #ccc;
+        height: 45px;
+    }
+
+    .person-info table .c3, .c1 {
+        display: none;
+    }
+
+    .bdetails .pay-info {
+        min-width: 200px;
+        min-height: 300px;
+        background: rgb(221, 218, 218);
+        padding: 15px;
+        margin: 60px 15px 0px 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    
+    .bdetails .pay-info input {
+        height: 40px;
+        width: 65%;
+        border-radius: 10px;
+        background-color: #fdfbfb;
+        margin-bottom: 20px;
+    }
+    
+    .bdetails .pay-info button {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        width: 200px;
+        color: #fff;
+        background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+        font-size: 14px;
+        border-radius: 30px;
+        border-top-right-radius: 0;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .bdetails .alert-success {
+        color: green;
+        height: 55px;
+        font-size: 22px;
+        width: 100%;
+        padding-top: 20px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgb(238, 237, 236);
+    }
+    
+    .bdetails .alert-error {
+        color: red;
+        height: 55px;
+        font-size: 22px;
+        width: 100%;
+        padding-top: 20px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgb(238, 237, 237);
+    }
+    
+
+
+}

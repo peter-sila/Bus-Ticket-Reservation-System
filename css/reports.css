@@ -1,0 +1,429 @@
+/* nav bar styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.alert {
+    color: red;
+}
+.alert-danger {
+    color: red;
+}
+
+.main-content nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-content nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.main-content nav ul li a {
+    text-decoration: none;
+    color: #333;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.main-content nav ul li a:hover {
+    background-color: #ddd;
+}
+
+/* Container for the dashboard */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    width: 250px;
+    justify-content: flex-start;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(27, 27, 41);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px;
+    height: 750px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: larger;
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    height: 40px;
+    background-color: #ddd;
+    color: black;
+    border-radius: 5px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: black;
+    display: block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:active {
+    background-color: #555;
+    height: 30px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+    color: #fff;
+    height: 30px;
+}
+
+/* Main content area styling */
+.main-content {
+    padding: 20px;
+    background-image: url(../images/dash1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    width: 78vw;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+
+.main-content .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 78vw;
+    display: flex;
+    padding: 10px;
+    padding-left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(192, 190, 190);
+    color: #fff;
+}
+.main-content .header .nav{
+    width: 90%;
+   
+}
+
+.main-content .header .nav .user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .user .log-btn {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    background-color: #ccc;
+    height: 40px;
+    width: 100px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.nav .user a {
+    text-decoration: none;
+}
+
+.nav .user .btn {
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+    color: #ccc;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    min-width: 90px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.main-content .header .nav .user .img-case img{
+    width: 40px;
+    height: 40px;
+}
+.main-content .header .nav .user .img-case{
+    display: flex;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.main-content .header .nav .user .img-case img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.b-reports {
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    background-color: #636363;
+    border-radius: 15px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+table td button {
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(45deg, #8f9ea7, #ba8dc0);
+    color: #ccc;
+    text-align: center;
+    text-decoration: none;
+    height: 30px;
+    min-width: 60px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+/* bus reports styling */
+.bus {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.bus select {
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #e4e1e1;
+}
+
+.bus form button {
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+    color: #ccc;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    min-width: 200px;
+    font-size: medium;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* schedule report */
+.schedule {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.schedule input[type=text], input[type=date] {
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #e4e1e1;
+}
+
+.schedule form button {
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+    color: #ccc;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    min-width: 200px;
+    font-size: medium;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* booking report */
+.booking {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.booking select {
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #e4e1e1;
+}
+
+.booking form input[type=number] {
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #e4e1e1;
+}
+
+.booking form button {
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+    color: #ccc;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    min-width: 200px;
+    font-size: medium;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* user report */
+.user-rep {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.user-rep select {
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #e4e1e1;
+}
+
+.user-rep form button {
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+    color: #ccc;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    min-width: 200px;
+    font-size: medium;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+/* payment report */
+.payment {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.payment select {
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #e4e1e1;
+}
+
+.payment form button {
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+    color: #ccc;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    min-width: 200px;
+    font-size: medium;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* message report */
+.message {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.message select {
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #e4e1e1;
+}
+
+.message form button {
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+    color: #ccc;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    min-width: 200px;
+    font-size: medium;
+    margin: auto;
+    cursor: pointer;
+}

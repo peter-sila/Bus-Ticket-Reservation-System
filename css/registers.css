@@ -1,0 +1,691 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 680px;
+    background-image: url('../images/backbus.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.prof {
+    width: 100%;
+    min-height: 600px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: rgb(0, 0, 0);
+    background-color: rgba(20, 20, 20, 0.5);
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container a {
+    color: #bd10d4;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cec3c3;
+    background-color: #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container .form-group #gender {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cec3c3;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+.container .form-group #role {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cec3c3;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container .alert {
+    color: red;
+}
+.container .alert-danger {
+    color: red;
+}
+
+/* nav bar styling */
+
+nav {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(192, 190, 190);
+    color: #fff;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+
+nav .reg-nav a .profile {
+    height: 40px;
+    width: 40px;
+}
+
+.logo{
+    width: 80px;
+    height: 70px;
+}
+
+.alert {
+    color: red;
+}
+.alert-danger {
+    color: red;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+nav ul li a:active {
+    background-color: #444;
+    text-decoration: underline;
+    color: #ccc;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    background-color: #747070;
+    color: #f5ebeb;
+    height: 120px;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+nav .reg-nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .reg-nav a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav .reg-nav button {
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    background-color: #ccc;
+    height: 40px;
+    min-width: 80px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reg-nav .reg-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 10px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+    font-size: 14px;
+    border-radius: 20px;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 50px;
+    
+}
+
+
+/* footer styles */
+
+footer {
+    background-color: #493845c9;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+}
+
+.head {
+    margin-bottom: 20px;
+}
+
+.head h3 {
+    font-size: 24px;
+    color: #fff;
+}
+.cont {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.our-conta {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nunbers {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.emails {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.our-comp,
+.top-routes {
+    flex: 1;
+    margin: 10px;
+}
+.cont h3 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.cont a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cont p {
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .prof {
+        width: 100%;
+        min-height: 600px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        background: rgb(0, 0, 0);
+        background-color: rgba(20, 20, 20, 0.5);
+    }
+
+    .container {
+        width: 300px;
+        margin: auto;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        border-radius: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid #cec3c3;
+        background-color: #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    .container .form-group #gender {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid #cec3c3;
+        font-size: 12px;
+        border-radius: 5px;
+        background-color: #ccc;
+    }
+    
+    .container .form-group #role {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid #cec3c3;
+        font-size: 12px;
+        border-radius: 5px;
+        background-color: #ccc;
+    }
+    
+    button {
+        width: 100%;
+        padding: 7px;
+        background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }    
+
+    nav ul li {
+        font-size: 13px;
+    }
+
+    /* navigation bar */
+    .nav-bar nav ul li marquee {
+        display: none;
+    }
+
+    .nav-bar nav a .logo {
+        width: 35px;
+        height: 40px;
+    }
+
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        padding: 3px;
+        position: relative;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #333;
+    }
+    
+    nav ul li a:active {
+        background-color: #444;
+        text-decoration: underline;
+        color: #ccc;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: none;
+        background-color: #747070;
+        color: #f5ebeb;
+        height: 70px;
+        border-radius: 10px;
+    }
+    
+    nav .reg-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    nav .reg-nav a {
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
+    }
+    
+    nav .reg-nav button {
+        display: inline-block;
+        border-radius: 10px;
+        border: none;
+        background-color: #ccc;
+        height: 30px;
+        min-width: 50px;
+        font-size: 8px;
+        cursor: pointer;
+    }
+
+    nav .reg-nav a .profile {
+        height: 25px;
+        width: 25px;
+    }
+
+    .nav-bar nav .reg-nav .reg-btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px;
+        color: #fff;
+        background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+        font-size: 12px;
+        border-radius: 15px;
+        width: 80px;
+        cursor: pointer;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .cont {
+        flex-direction: column;
+    }
+
+    
+}
+
+/* Responsive styling @media screen size change */
+@media screen and (max-width: 600px) {
+    .prof {
+        width: 100%;
+        min-height: 600px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        background: rgb(0, 0, 0);
+        background-color: rgba(20, 20, 20, 0.5);
+    }
+
+    .container {
+        width: 300px;
+        margin: auto;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        border-radius: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid #cec3c3;
+        background-color: #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    .container .form-group #gender {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid #cec3c3;
+        font-size: 12px;
+        border-radius: 5px;
+        background-color: #ccc;
+    }
+    
+    .container .form-group #role {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid #cec3c3;
+        font-size: 12px;
+        border-radius: 5px;
+        background-color: #ccc;
+    }
+    
+    button {
+        width: 100%;
+        padding: 7px;
+        background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }    
+
+     /* navigation bar */
+     .nav-bar nav ul li marquee {
+        display: none;
+    }
+
+    .nav-bar nav a .logo {
+        width: 35px;
+        height: 40px;
+    }
+
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        padding: 3px;
+        position: relative;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #333;
+    }
+    
+    nav ul li a:active {
+        background-color: #444;
+        text-decoration: underline;
+        color: #ccc;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: none;
+        background-color: #747070;
+        color: #f5ebeb;
+        height: 70px;
+        border-radius: 10px;
+    }
+    
+    nav .reg-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    nav .reg-nav a {
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
+    }
+    
+    nav .reg-nav button {
+        display: inline-block;
+        border-radius: 10px;
+        border: none;
+        background-color: #ccc;
+        height: 30px;
+        min-width: 50px;
+        font-size: 8px;
+        cursor: pointer;
+    }
+
+    nav .reg-nav a .profile {
+        height: 25px;
+        width: 25px;
+    }
+
+    .nav-bar nav .reg-nav .reg-btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px;
+        color: #fff;
+        background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+        font-size: 12px;
+        border-radius: 15px;
+        width: 80px;
+        cursor: pointer;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .cont {
+        flex-direction: column;
+    }
+
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 300px) {
+    .prof {
+        width: 100%;
+        height: auto;
+        background: rgb(0, 0, 0);
+        background-color: rgba(20, 20, 20, 0.5);
+    }
+
+    .container {
+        width: 200px;
+        margin: auto;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        border-radius: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid #cec3c3;
+        background-color: #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    .container .form-group #gender {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid #cec3c3;
+        font-size: 12px;
+        border-radius: 5px;
+        background-color: #ccc;
+    }
+    
+    .container .form-group #role {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid #cec3c3;
+        font-size: 12px;
+        border-radius: 5px;
+        background-color: #ccc;
+    }
+    
+    button {
+        width: 100%;
+        padding: 7px;
+        background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }    
+
+    /* navigation bar */
+    .nav-bar nav ul li marquee {
+        display: none;
+    }
+
+    .nav-bar nav a .logo {
+        width: 35px;
+        height: 40px;
+    }
+
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        padding: 3px;
+        position: relative;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #333;
+    }
+    
+    nav ul li a:active {
+        background-color: #444;
+        text-decoration: underline;
+        color: #ccc;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: none;
+        background-color: #747070;
+        color: #f5ebeb;
+        height: 70px;
+        border-radius: 10px;
+    }
+    
+    nav .reg-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    nav .reg-nav a {
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
+    }
+    
+    nav .reg-nav button {
+        display: inline-block;
+        border-radius: 10px;
+        border: none;
+        background-color: #ccc;
+        height: 30px;
+        min-width: 50px;
+        font-size: 8px;
+        cursor: pointer;
+    }
+
+    nav .reg-nav a .profile {
+        height: 25px;
+        width: 25px;
+    }
+
+    .nav-bar nav .reg-nav .reg-btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px;
+        color: #fff;
+        background-image: linear-gradient(45deg, #3f87b1, #bd10d4);
+        font-size: 12px;
+        border-radius: 15px;
+        width: 80px;
+        cursor: pointer;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .cont {
+        flex-direction: column;
+    }
+    
+
+
+}
+
