@@ -1008,9 +1008,10 @@ footer {
     padding-bottom: 30px;
 }
 
-.cont-mess .message .form .send-mess input{
+.cont-mess .message .form .send-mess textarea{
     width: 100%;
-    min-height: 150px;
+    min-height: 100px;
+    padding: 10px;
     
 }
 

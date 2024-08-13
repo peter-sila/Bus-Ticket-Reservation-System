@@ -18,7 +18,7 @@ if (!isset($_SESSION['user_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     
-    <link rel="stylesheet" href="css/styless.css">
+    <link rel="stylesheet" href="css/stylessf.css">
 </head>
 <body>
     <div class="backimage">
@@ -107,7 +107,7 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
                 <div class="send-mess">
                     <label for="message">Message</label>
-                    <input type="text" name="message" id="message" placeholder="Write message">
+                    <textarea type="text" name="message" id="message" placeholder="Write message"></textarea>
                     <?php if (isset($errors['message'])): ?>
                         <div class="alert alert-danger">
                             <li><?php echo $errors['message']; ?></li>
